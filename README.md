@@ -78,6 +78,21 @@ The {team-secret} ist your SIGNL4 team secret.
 
 Under Custom Template you can insert your JSON data template as to be sent to SIGNL4.
 
+```
+{
+    "event": "photon-motion",
+    "deviceID": "37002a000847373336323230",
+    "url": "https://connect.signl4.com/webhook/96sbq38s",
+    "requestType": "POST",
+    "noDefaults": true,
+    "rejectUnauthorized": true,
+    "json": {
+        "subject": "{{{subject}}}",
+        "temperature": "{{{temperature}}}"
+    }
+}
+```
+
 ![Particle Webhook](particle-webhook2.png)
 
 4. Deploy the Code  
@@ -86,7 +101,7 @@ You can now go to the Web IDE at https://build.particle.io/build to deploy the c
 
 ![Particle Code](particle-code.png)
 
-The two main lines to send the SIGN4 alert are the following.
+The two main lines to send the SIGNL4 alert are the following.
 
 ```
 String data = "{ \"subject\": \"Motion detected.\", \"temperature\": \"" + temperature() + "\" }";
