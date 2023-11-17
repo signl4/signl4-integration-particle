@@ -82,7 +82,7 @@ Under Custom Template you can insert your JSON data template as to be sent to SI
 {
     "event": "photon-motion",
     "deviceID": "37002a000847373336323230",
-    "url": "https://connect.signl4.com/webhook/96sbq38s",
+    "url": "https://connect.signl4.com/webhook/{teamSecret}",
     "requestType": "POST",
     "noDefaults": true,
     "rejectUnauthorized": true,
