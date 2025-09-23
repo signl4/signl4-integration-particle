@@ -9,6 +9,7 @@ In this example, we integrate a Particle Photon device with both an IR motion se
 ![Particle Setup](particle-photon.jpg)
 
 ## Prerequisites
+
 - A SIGNL4 ([https://www.signl4.com](https://www.signl4.com/)) account
 - An Particle ([https://console.particle.io](https://console.particle.io/)) account
 - A Particle device, e.g. Maker Kit ([https://store.particle.io/collections/all-products](https://store.particle.io/collections/all-products))
@@ -102,4 +103,5 @@ Use the same value for X-S4-ExternalID as for triggering the alert.
 The alert in SIGNL4 might look like this.
 
 ![SIGNL4 Alert](signl4-particle.png)
+
 
